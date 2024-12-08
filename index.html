@@ -1859,7 +1859,10 @@
           data-element_type="section"
           data-settings='{"background_background":"classic","jet_parallax_layout_list":[]}'
         >
-          <div class="elementor-container elementor-column-gap-default">
+          <div
+            class="elementor-container elementor-column-gap-default"
+            style=""
+          >
             <div
               class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-aefca43"
               data-id="aefca43"
@@ -1882,13 +1885,27 @@
                       >
                         <div class="hfe-site-logo-set">
                           <div class="hfe-site-logo-container">
-                            <img
-                              style="border-radius: 70%; width: 60%; height: 0%"
-                              decoding="async"
-                              class="hfe-site-logo-img elementor-animation-"
-                              src="wp-content/uploads/2024/04/logointerior.jpg"
-                              alt="WhatsApp Image 2024-04-18 at 13.05.40"
-                            />
+                            <div
+                              style="
+                                width: 200px;
+                                height: 200px;
+                                border-radius: 50%;
+                                overflow: hidden;
+                                display: inline-block;
+                              "
+                            >
+                              <img
+                                style="
+                                  width: 100%;
+                                  height: 100%;
+                                  object-fit: cover;
+                                "
+                                decoding="async"
+                                class="hfe-site-logo-img elementor-animation-"
+                                src="wp-content/uploads/2024/04/logointerior.jpg"
+                                alt="WhatsApp Image 2024-04-18 at 13.05.40"
+                              />
+                            </div>
                           </div>
                         </div>
                       </a>
@@ -1938,7 +1955,7 @@
                             id="menu-item-322"
                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-317 current_page_item parent hfe-creative-menu"
                           >
-                            <a href="index.html" class="hfe-menu-item">Home</a>
+                            <a href="/" class="hfe-menu-item">Home</a>
                           </li>
                           <li
                             id="menu-item-653"
