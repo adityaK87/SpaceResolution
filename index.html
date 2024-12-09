@@ -3369,91 +3369,184 @@
         </div>
       </section>
 
+
+      <!-- Contact Us form -->
       <section
         class="elementor-section elementor-top-section elementor-element elementor-element-2601caa elementor-section-boxed elementor-section-height-default elementor-section-height-default"
         data-id="2601caa" data-element_type="section" data-settings='{"jet_parallax_layout_list":[]}'>
-        <div class="elementor-container elementor-column-gap-default">
-          <div
-            class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-606f12f elementor-invisible"
-            data-id="606f12f" data-element_type="column"
-            data-settings='{"background_background":"classic","animation":"fadeInLeft"}'>
-            <div class="elementor-widget-wrap elementor-element-populated">
-              <div class="elementor-background-overlay"></div>
-              <div class="elementor-element elementor-element-65262f8 elementor-widget elementor-widget-text-editor"
-                data-id="65262f8" data-element_type="widget" data-widget_type="text-editor.default">
-                <div class="elementor-widget-container">
-                  <p>
-                    We couldn’t have done this without all the help we
-                    received from their entire project team– what an absolute
-                    pleasure it has been to work with these people. We are
-                    delighted with our new workspace, it is so bright,
-                    spacious and definitely has the WOW factor. Thank you for
-                    such a fantastic job!
-                  </p>
-                </div>
-              </div>
+        <div style="margin: 20px 0px;">
+          <style>
+            .contact-container {
+              width: 100%;
+            }
+
+            .contact-heading {
+              font-size: 2.2rem;
+              text-align: center;
+              font-weight: 600;
+              font-family: "Roboto", sans-serif;
+            }
+
+            .contact-form {
+              max-width: 1000px;
+              margin: 0 auto;
+              padding: 20px;
+              border: 1px solid #ccc;
+              border-radius: 8px;
+              background-color: #f9f9f9;
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
+
+            .contact-form label {
+              display: block;
+              margin-bottom: 8px;
+              font-size: 1rem;
+              font-weight: 500;
+              color: #333;
+            }
+
+            .contact-form input,
+            .contact-form textarea {
+              width: 100%;
+              padding: 15px;
+              margin-bottom: 15px;
+              border: 1px solid #ccc;
+              border-radius: 4px;
+              font-size: 14px;
+              transition: border-color 0.3s;
+            }
+
+            .contact-form input:focus,
+            .contact-form textarea:focus {
+              border-color: #0b2532;
+              outline: none;
+            }
+
+            .contact-form button {
+              background-color: #0b2532;
+              width: 100%;
+              color: white;
+              padding: 10px 15px;
+              border: none;
+              border-radius: 4px;
+              cursor: pointer;
+              font-size: 16px;
+              transition: background-color 0.3s;
+            }
+
+            .contact-form button:hover {
+              background-color: #218838;
+            }
+          </style>
+          <div class="contact-container">
+            <h2 class="contact-heading">Get in Touch</h2>
+            <div class="form-container">
+              <style>
+                .contact-form {
+
+                  max-width: 800px;
+                  margin: 0 auto;
+                  padding: 20px;
+                  border: 1px solid #ccc;
+                  border-radius: 8px;
+                  background-color: #f9f9f9;
+                  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                }
+
+                .contact-form label {
+                  display: block;
+                  margin-bottom: 8px;
+                  font-size: 1rem;
+                  font-weight: 500;
+                  color: #333;
+                }
+
+                .contact-form input,
+                .contact-form textarea {
+                  width: 100%;
+                  padding: 10px;
+                  margin-bottom: 15px;
+                  border: 1px solid #ccc;
+                  border-radius: 4px;
+                  font-size: 14px;
+                  transition: border-color 0.3s;
+                }
+
+                .contact-form input:focus,
+                .contact-form textarea:focus {
+                  border-color: #66afe9;
+                  outline: none;
+                }
+
+                .contact-form button {
+                  background-color: #0b2532;
+                  width: 100%;
+                  color: white;
+                  padding: 10px 15px;
+                  border: none;
+                  border-radius: 4px;
+                  cursor: pointer;
+                  font-size: 16px;
+                  transition: background-color 0.3s;
+                }
+
+                .contact-form button:hover {
+                  background-color: #218838;
+                }
+              </style>
+
+              <form class=" contact-form" onsubmit="sendMessage(event)">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required />
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required />
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required />
+
+                <label for="address">Address</label>
+                <input type="text" id="address" name="address" placeholder="Your Address" required />
+
+                <label for="enquiry">Message</label>
+                <textarea id="enquiry" name="enquiry" rows="5" placeholder="Your Message" required></textarea>
+
+                <button type="submit">Send Message</button>
+              </form>
             </div>
           </div>
-          <div
-            class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-b1a1667"
-            data-id="b1a1667" data-element_type="column">
-            <div class="elementor-widget-wrap elementor-element-populated">
-              <div class="elementor-element elementor-element-2844f99 elementor-widget elementor-widget-spacer"
-                data-id="2844f99" data-element_type="widget" data-widget_type="spacer.default">
-                <div class="elementor-widget-container">
-                  <div class="elementor-spacer">
-                    <div class="elementor-spacer-inner"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-75441e7 elementor-invisible"
-            data-id="75441e7" data-element_type="column"
-            data-settings='{"background_background":"classic","animation":"fadeInRight"}'>
-            <div class="elementor-widget-wrap elementor-element-populated">
-              <div class="elementor-background-overlay"></div>
-              <div class="elementor-element elementor-element-bf26e59 elementor-widget elementor-widget-text-editor"
-                data-id="bf26e59" data-element_type="widget" data-widget_type="text-editor.default">
-                <div class="elementor-widget-container">
-                  <p>
-                    Not only were we moving to a new office but also creating
-                    a culture of agile working which wouldn’t have been
-                    achievable without the knowledge, skills and experience of
-                    the Diamond design team The Diamond team excel with their
-                    communication and customer service. Thank you Measuretape
-                    Team
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+          <script>
+            function sendMessage(event) {
+              event.preventDefault(); // Prevent the default form submission
+
+              // Get form data
+              const name = document.getElementById("name").value;
+              const email = document.getElementById("email").value;
+
+              const phone = document.getElementById("phone").value;
+
+              const address = document.getElementById("address").value;
+
+              const enquiry = document.getElementById("enquiry").value;
+
+              // WhatsApp number (replace with your number)
+              const whatsappNumber = "+917428695994";
+              const message = `Name: ${name}%0AEmail: ${email}%0APhone: ${phone}%0AAddress:${address}%0AMessage:${enquiry}`;
+
+              // Construct WhatsApp URL
+              const whatsappURL = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${message}`;
+
+              // Open WhatsApp URL
+              window.open(whatsappURL, "_blank");
+            }
+          </script>
         </div>
       </section>
-      <section
-        class="elementor-section elementor-top-section elementor-element elementor-element-572c853 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-        data-id="572c853" data-element_type="section" data-settings='{"jet_parallax_layout_list":[]}'>
-        <div class="elementor-container elementor-column-gap-default">
-          <div
-            class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-1b536e3"
-            data-id="1b536e3" data-element_type="column">
-            <div class="elementor-widget-wrap elementor-element-populated">
-              <div class="elementor-element elementor-element-92b1c66 elementor-widget elementor-widget-spacer"
-                data-id="92b1c66" data-element_type="widget" data-widget_type="spacer.default">
-                <div class="elementor-widget-container">
-                  <div class="elementor-spacer">
-                    <div class="elementor-spacer-inner"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+
       <section
         class="elementor-section elementor-top-section elementor-element elementor-element-456ed3a elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-        data-id="456ed3a" data-element_type="section" data-settings='{"jet_parallax_layout_list":[]}'>
+        style="margin: 50px 0px;" data-id="456ed3a" data-element_type="section"
+        data-settings='{"jet_parallax_layout_list":[]}'>
         <div class="elementor-container elementor-column-gap-default">
           <div
             class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-e3afbd3"
@@ -3480,7 +3573,7 @@
                 <div class="elementor-widget-container">
                   <div class="elementor-button-wrapper">
                     <a class="elementor-button elementor-button-link elementor-size-sm elementor-animation-shrink"
-                      href="contact-us/index.html">
+                      href="mailto:spacerevolution15@gmail.com">
                       <span class="elementor-button-content-wrapper">
                         <span class="elementor-button-icon">
                           <i aria-hidden="true" class="far fa-arrow-alt-circle-right"></i>
@@ -3495,317 +3588,9 @@
           </div>
         </div>
       </section>
-      <section
-        class="elementor-section elementor-top-section elementor-element elementor-element-d5be190 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-        data-id="d5be190" data-element_type="section" data-settings='{"jet_parallax_layout_list":[]}'>
-        <div class="elementor-container elementor-column-gap-default">
-          <div
-            class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-1bd760c"
-            data-id="1bd760c" data-element_type="column">
-            <div class="elementor-widget-wrap elementor-element-populated">
-              <div class="elementor-element elementor-element-9887ad5 elementor-widget elementor-widget-spacer"
-                data-id="9887ad5" data-element_type="widget" data-widget_type="spacer.default">
-                <div class="elementor-widget-container">
-                  <div class="elementor-spacer">
-                    <div class="elementor-spacer-inner"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section
-        class="elementor-section elementor-top-section elementor-element elementor-element-dc82ddc elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-        data-id="dc82ddc" data-element_type="section"
-        data-settings='{"background_background":"classic","jet_parallax_layout_list":[]}'>
-        <div class="elementor-container elementor-column-gap-default">
-          <div
-            class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-b4da32a"
-            data-id="b4da32a" data-element_type="column">
-            <div class="elementor-widget-wrap elementor-element-populated">
-              <div class="elementor-element elementor-element-34eb8b5 elementor-widget elementor-widget-spacer"
-                data-id="34eb8b5" data-element_type="widget" data-widget_type="spacer.default">
-                <div class="elementor-widget-container">
-                  <div class="elementor-spacer">
-                    <div class="elementor-spacer-inner"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="elementor-element elementor-element-f62eb33 elementor-widget elementor-widget-heading"
-                data-id="f62eb33" data-element_type="widget" data-widget_type="heading.default">
-                <!-- <div class="elementor-widget-container">
-                    <h2 class="elementor-heading-title elementor-size-default">
-                      Trending Brands
-                    </h2>
-                  </div> -->
-              </div>
-              <!-- <div
-                  class="elementor-element elementor-element-9fc8bd2 elementor-widget-divider--view-line elementor-widget elementor-widget-divider"
-                  data-id="9fc8bd2"
-                  data-element_type="widget"
-                  data-widget_type="divider.default"
-                >
-                  <div class="elementor-widget-container">
-                    <div class="elementor-divider">
-                      <span class="elementor-divider-separator"> </span>
-                    </div>
-                  </div>
-                </div> -->
-            </div>
-          </div>
-        </div>
-      </section>
-      <section
-        class="elementor-section elementor-top-section elementor-element elementor-element-aa477a2 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-        data-id="aa477a2" data-element_type="section" data-settings='{"jet_parallax_layout_list":[]}'>
-        <div class="elementor-container elementor-column-gap-default">
-          <div
-            class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-f67b826"
-            data-id="f67b826" data-element_type="column">
-            <div class="elementor-widget-wrap elementor-element-populated">
-              <div
-                class="elementor-element elementor-element-06c44ab elementor-arrows-position-inside elementor-pagination-position-outside elementor-widget elementor-widget-image-carousel"
-                data-id="06c44ab" data-element_type="widget"
-                data-settings='{"slides_to_show":"5","autoplay_speed":1000,"navigation":"both","autoplay":"yes","pause_on_hover":"yes","pause_on_interaction":"yes","infinite":"yes","speed":500}'
-                data-widget_type="image-carousel.default">
-                <div class="elementor-widget-container">
-                  <div class="elementor-image-carousel-wrapper swiper" dir="ltr">
-                    <div class="elementor-image-carousel swiper-wrapper" aria-live="off">
-                      <!-- <div
-                          class="swiper-slide"
-                          role="group"
-                          aria-roledescription="slide"
-                          aria-label="1 of 14"
-                        >
-                          <figure class="swiper-slide-inner">
-                            <img
-                              decoding="async"
-                              class="swiper-slide-image"
-                              src="wp-content/uploads/2022/11/m-1.png"
-                              alt="m"
-                            />
-                          </figure>
-                        </div>
-                        <div
-                          class="swiper-slide"
-                          role="group"
-                          aria-roledescription="slide"
-                          aria-label="2 of 14"
-                        >
-                          <figure class="swiper-slide-inner">
-                            <img
-                              decoding="async"
-                              class="swiper-slide-image"
-                              src="wp-content/uploads/2022/11/m1-1.png"
-                              alt="m1"
-                            />
-                          </figure>
-                        </div>
-                        <div
-                          class="swiper-slide"
-                          role="group"
-                          aria-roledescription="slide"
-                          aria-label="3 of 14"
-                        >
-                          <figure class="swiper-slide-inner">
-                            <img
-                              decoding="async"
-                              class="swiper-slide-image"
-                              src="wp-content/uploads/2022/11/m2-1.png"
-                              alt="m2"
-                            />
-                          </figure>
-                        </div>
-                        <div
-                          class="swiper-slide"
-                          role="group"
-                          aria-roledescription="slide"
-                          aria-label="4 of 14"
-                        >
-                          <figure class="swiper-slide-inner">
-                            <img
-                              decoding="async"
-                              class="swiper-slide-image"
-                              src="wp-content/uploads/2022/11/m3-1.png"
-                              alt="m3"
-                            />
-                          </figure>
-                        </div>
-                        <div
-                          class="swiper-slide"
-                          role="group"
-                          aria-roledescription="slide"
-                          aria-label="5 of 14"
-                        >
-                          <figure class="swiper-slide-inner">
-                            <img
-                              decoding="async"
-                              class="swiper-slide-image"
-                              src="wp-content/uploads/2022/11/m4-1.png"
-                              alt="m4"
-                            />
-                          </figure>
-                        </div>
-                        <div
-                          class="swiper-slide"
-                          role="group"
-                          aria-roledescription="slide"
-                          aria-label="6 of 14"
-                        >
-                          <figure class="swiper-slide-inner">
-                            <img
-                              decoding="async"
-                              class="swiper-slide-image"
-                              src="wp-content/uploads/2022/11/m5-1.png"
-                              alt="m5"
-                            />
-                          </figure>
-                        </div>
-                        <div
-                          class="swiper-slide"
-                          role="group"
-                          aria-roledescription="slide"
-                          aria-label="7 of 14"
-                        >
-                          <figure class="swiper-slide-inner">
-                            <img
-                              decoding="async"
-                              class="swiper-slide-image"
-                              src="wp-content/uploads/2022/11/m6-1.png"
-                              alt="m6"
-                            />
-                          </figure>
-                        </div>
-                        <div
-                          class="swiper-slide"
-                          role="group"
-                          aria-roledescription="slide"
-                          aria-label="8 of 14"
-                        >
-                          <figure class="swiper-slide-inner">
-                            <img
-                              decoding="async"
-                              class="swiper-slide-image"
-                              src="wp-content/uploads/2022/11/m7-1.png"
-                              alt="m7"
-                            />
-                          </figure>
-                        </div>
-                        <div
-                          class="swiper-slide"
-                          role="group"
-                          aria-roledescription="slide"
-                          aria-label="9 of 14"
-                        >
-                          <figure class="swiper-slide-inner">
-                            <img
-                              decoding="async"
-                              class="swiper-slide-image"
-                              src="wp-content/uploads/2022/11/m8-1.png"
-                              alt="m8"
-                            />
-                          </figure>
-                        </div>
-                        <div
-                          class="swiper-slide"
-                          role="group"
-                          aria-roledescription="slide"
-                          aria-label="10 of 14"
-                        >
-                          <figure class="swiper-slide-inner">
-                            <img
-                              decoding="async"
-                              class="swiper-slide-image"
-                              src="wp-content/uploads/2022/11/m9-1.png"
-                              alt="m9"
-                            />
-                          </figure>
-                        </div>
-                        <div
-                          class="swiper-slide"
-                          role="group"
-                          aria-roledescription="slide"
-                          aria-label="11 of 14"
-                        >
-                          <figure class="swiper-slide-inner">
-                            <img
-                              decoding="async"
-                              class="swiper-slide-image"
-                              src="wp-content/uploads/2022/11/m10-1.png"
-                              alt="m10"
-                            />
-                          </figure>
-                        </div>
-                        <div
-                          class="swiper-slide"
-                          role="group"
-                          aria-roledescription="slide"
-                          aria-label="12 of 14"
-                        >
-                          <figure class="swiper-slide-inner">
-                            <img
-                              decoding="async"
-                              class="swiper-slide-image"
-                              src="wp-content/uploads/2022/11/m12-1.png"
-                              alt="m12"
-                            />
-                          </figure>
-                        </div>
-                        <div
-                          class="swiper-slide"
-                          role="group"
-                          aria-roledescription="slide"
-                          aria-label="13 of 14"
-                        >
-                          <figure class="swiper-slide-inner">
-                            <img
-                              decoding="async"
-                              class="swiper-slide-image"
-                              src="wp-content/uploads/2022/11/m13-1.png"
-                              alt="m13"
-                            />
-                          </figure>
-                        </div>
-                        <div
-                          class="swiper-slide"
-                          role="group"
-                          aria-roledescription="slide"
-                          aria-label="14 of 14"
-                        >
-                          <figure class="swiper-slide-inner">
-                            <img
-                              decoding="async"
-                              class="swiper-slide-image"
-                              src="wp-content/uploads/2022/11/m14-1.png"
-                              alt="m14"
-                            />
-                          </figure>
-                        </div> -->
-                    </div>
-                    <div class="elementor-swiper-button elementor-swiper-button-prev" role="button" tabindex="0">
-                      <i aria-hidden="true" class="eicon-chevron-left"></i>
-                    </div>
-                    <div class="elementor-swiper-button elementor-swiper-button-next" role="button" tabindex="0">
-                      <i aria-hidden="true" class="eicon-chevron-right"></i>
-                    </div>
 
-                    <div class="swiper-pagination"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="elementor-element elementor-element-7d7d40c elementor-widget elementor-widget-spacer"
-                data-id="7d7d40c" data-element_type="widget" data-widget_type="spacer.default">
-                <div class="elementor-widget-container">
-                  <div class="elementor-spacer">
-                    <div class="elementor-spacer-inner"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+
+      <!-- Footer section -->
       <section
         class="elementor-section elementor-top-section elementor-element elementor-element-ec864f7 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
         data-id="ec864f7" data-element_type="section"
