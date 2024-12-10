@@ -1821,7 +1821,8 @@
                 <div class="elementor-widget-container">
                   <div class="hfe-nav-menu hfe-layout-horizontal hfe-nav-menu-layout horizontal hfe-pointer__none"
                     data-layout="horizontal">
-                    <div role="button" class="hfe-nav-menu__toggle elementor-clickable">
+                    <div role="button" class="hfe-nav-menu__toggle elementor-clickable" aria-expanded="true"
+                      onclick="toggleClasses()">
                       <span class="screen-reader-text">Menu</span>
                       <div class="hfe-nav-menu-icon">
                         <i aria-hidden="true" class="fas fa-align-justify"></i>
@@ -1893,6 +1894,32 @@
                         </li>
                       </ul>
                     </nav>
+                    <style>
+                      .navStyle {
+                        background-color: white;
+                        z-index: 9999;
+                        width: 100%;
+                      }
+
+                      @media only screen and (max-width:320px) {
+                        .navStyle {
+                          width: 320px;
+                          left: -138px;
+                          top: 70px;
+                        }
+                      }
+                    </style>
+                    <script>
+                      function toggleClasses() {
+                        const toggleButton = document.querySelector(".hfe-nav-menu__toggle")
+                        const nav = document.querySelector(".hfe-nav-menu__layout-horizontal")
+                        console.log(toggleButton)
+                        toggleButton.classList.toggle("hfe-active-menu")
+                        toggleButton.classList.toggle("hfe-active-menu-full-width")
+                        nav.classList.toggle("menu-is-active")
+                        nav.classList.toggle("navStyle")
+                      }
+                    </script>
                   </div>
                 </div>
               </div>
