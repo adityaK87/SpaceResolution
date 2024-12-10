@@ -1786,30 +1786,20 @@
                   <div class="hfe-site-logo">
                     <a data-elementor-open-lightbox="" class="elementor-clickable" href="index.html">
                       <div class="hfe-site-logo-set">
-                        <style>
-                          .imageContainer {
-                            width: 150px;
-                            height: 150px;
-                            border-radius: 50%;
-                            overflow: hidden;
-                            display: inline-block;
-                          }
-
-                          @media (max-width:540px) {
-                            .imageContainer {
-                              width: 80px;
-                              height: 80px;
-                            }
-                          }
-                        </style>
                         <div class="hfe-site-logo-container">
-                          <div class="imageContainer">
+                          <div style="
+                                width: 150px;
+                                height: 150px;
+                                border-radius: 50%;
+                                overflow: hidden;
+                                display: inline-block;
+                              ">
                             <img style="
                                   width: 100%;
                                   height: 100%;
                                   object-fit: cover;
                                 " decoding="async" class="hfe-site-logo-img elementor-animation-"
-                              src="../wp-content/uploads/2024/04/logointerior.jpg" alt="space revolution" />
+                              src="wp-content/uploads/2024/04/logointerior.jpg" alt="space revolution" />
                           </div>
                         </div>
                       </div>
@@ -1831,8 +1821,7 @@
                 <div class="elementor-widget-container">
                   <div class="hfe-nav-menu hfe-layout-horizontal hfe-nav-menu-layout horizontal hfe-pointer__none"
                     data-layout="horizontal">
-                    <div role="button" class="hfe-nav-menu__toggle elementor-clickable" aria-expanded="true"
-                      onclick="toggleClasses()">
+                    <div role="button" class="hfe-nav-menu__toggle elementor-clickable">
                       <span class="screen-reader-text">Menu</span>
                       <div class="hfe-nav-menu-icon">
                         <i aria-hidden="true" class="fas fa-align-justify"></i>
@@ -1849,11 +1838,11 @@
                         </li>
                         <li id="menu-item-653"
                           class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children parent hfe-has-submenu hfe-creative-menu">
-                          <div class="hfe-has-submenu-container" onclick="toggleSubMenu('sub-menu-1')">
-                            <a href="#" class="hfe-menu-item">Design Solutions<span
+                          <div class="hfe-has-submenu-container">
+                            <a href="#" class="hfe-menu-item">About Us<span
                                 class="hfe-menu-toggle sub-arrow hfe-menu-child-0"><i class="fa"></i></span></a>
                           </div>
-                          <ul class="sub-menu" id="sub-menu-1">
+                          <ul class="sub-menu">
                             <li id="menu-item-445"
                               class="menu-item menu-item-type-post_type menu-item-object-page hfe-creative-menu">
                               <a href="2d-design/index.html" class="hfe-sub-menu-item">2D Design</a>
@@ -1866,11 +1855,11 @@
                         </li>
                         <li id="menu-item-789"
                           class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children parent hfe-has-submenu hfe-creative-menu">
-                          <div class="hfe-has-submenu-container" onclick="toggleSubMenu('sub-menu-2')">
-                            <a href="#" class="hfe-menu-item">Modular design<span
+                          <div class="hfe-has-submenu-container">
+                            <a href="#" class="hfe-menu-item">Services<span
                                 class="hfe-menu-toggle sub-arrow hfe-menu-child-0"><i class="fa"></i></span></a>
                           </div>
-                          <ul class="sub-menu" id="sub-menu-2">
+                          <ul class="sub-menu">
                             <li id="menu-item-790"
                               class="menu-item menu-item-type-custom menu-item-object-custom hfe-creative-menu">
                               <a href="modular-kitchen/index.html" class="hfe-sub-menu-item">Modern kitchen</a>
@@ -1879,11 +1868,11 @@
                         </li>
                         <li id="menu-item-875"
                           class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children parent hfe-has-submenu hfe-creative-menu">
-                          <div class="hfe-has-submenu-container" onclick="toggleSubMenu('sub-menu-3')">
-                            <a href="#" class="hfe-menu-item">Home Renovation<span
+                          <div class="hfe-has-submenu-container">
+                            <a href="/" class="hfe-menu-item">Ideas<span
                                 class="hfe-menu-toggle sub-arrow hfe-menu-child-0"><i class="fa"></i></span></a>
                           </div>
-                          <ul class="sub-menu" id="sub-menu-3">
+                          <ul class="sub-menu">
                             <li id="menu-item-783"
                               class="menu-item menu-item-type-post_type menu-item-object-page hfe-creative-menu">
                               <a href="recent-works/index.html" class="hfe-sub-menu-item">Recent Works</a>
@@ -1896,49 +1885,14 @@
                         </li>
                         <li id="menu-item-785"
                           class="menu-item menu-item-type-custom menu-item-object-custom parent hfe-creative-menu">
-                          <a href="interior-in-a-budget/index.html" class="hfe-menu-item">Interior In a Budget</a>
+                          <a href="interior-in-a-budget/index.html" class="hfe-menu-item">Blogs</a>
                         </li>
                         <li id="menu-item-856"
                           class="menu-item menu-item-type-post_type menu-item-object-page parent hfe-creative-menu">
-                          <a href="/" class="hfe-menu-item">Free Estimate</a>
+                          <a href="/" class="hfe-menu-item">Contact us </a>
                         </li>
                       </ul>
                     </nav>
-                    <style>
-                      .navStyle {
-                        background-color: white;
-                        z-index: 9999;
-                        width: 100%;
-                      }
-
-                      @media only screen and (max-width:320px) {
-                        .navStyle {
-                          width: 320px;
-                          left: -138px;
-                          top: 70px;
-                        }
-                      }
-                    </style>
-                    <script>
-                      function toggleClasses() {
-                        const toggleButton = document.querySelector(".hfe-nav-menu__toggle")
-                        const nav = document.querySelector(".hfe-nav-menu__layout-horizontal")
-                        console.log(toggleButton)
-                        toggleButton.classList.toggle("hfe-active-menu")
-                        toggleButton.classList.toggle("hfe-active-menu-full-width")
-                        nav.classList.toggle("menu-is-active")
-                        nav.classList.toggle("navStyle")
-                      }
-
-                      function toggleSubMenu(id) {
-                        const submenu = document.getElementById(id)
-                        submenu.style.visibility = "visible"
-                        submenu.style.opacity = 1
-                        submenu.style.position = "relative"
-                        submenu.style.height = "auto"
-
-                      }
-                    </script>
                   </div>
                 </div>
               </div>
