@@ -1849,11 +1849,11 @@
                         </li>
                         <li id="menu-item-653"
                           class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children parent hfe-has-submenu hfe-creative-menu">
-                          <div class="hfe-has-submenu-container">
+                          <div class="hfe-has-submenu-container" onclick="toggleSubMenu('sub-menu-1')">
                             <a href="#" class="hfe-menu-item">Design Solutions<span
                                 class="hfe-menu-toggle sub-arrow hfe-menu-child-0"><i class="fa"></i></span></a>
                           </div>
-                          <ul class="sub-menu">
+                          <ul class="sub-menu" id="sub-menu-1">
                             <li id="menu-item-445"
                               class="menu-item menu-item-type-post_type menu-item-object-page hfe-creative-menu">
                               <a href="2d-design/index.html" class="hfe-sub-menu-item">2D Design</a>
@@ -1866,11 +1866,11 @@
                         </li>
                         <li id="menu-item-789"
                           class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children parent hfe-has-submenu hfe-creative-menu">
-                          <div class="hfe-has-submenu-container">
+                          <div class="hfe-has-submenu-container" onclick="toggleSubMenu('sub-menu-2')">
                             <a href="#" class="hfe-menu-item">Modular design<span
                                 class="hfe-menu-toggle sub-arrow hfe-menu-child-0"><i class="fa"></i></span></a>
                           </div>
-                          <ul class="sub-menu">
+                          <ul class="sub-menu" id="sub-menu-2">
                             <li id="menu-item-790"
                               class="menu-item menu-item-type-custom menu-item-object-custom hfe-creative-menu">
                               <a href="modular-kitchen/index.html" class="hfe-sub-menu-item">Modern kitchen</a>
@@ -1879,11 +1879,11 @@
                         </li>
                         <li id="menu-item-875"
                           class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children parent hfe-has-submenu hfe-creative-menu">
-                          <div class="hfe-has-submenu-container">
-                            <a href="/" class="hfe-menu-item">Home Renovation<span
+                          <div class="hfe-has-submenu-container" onclick="toggleSubMenu('sub-menu-3')">
+                            <a href="#" class="hfe-menu-item">Home Renovation<span
                                 class="hfe-menu-toggle sub-arrow hfe-menu-child-0"><i class="fa"></i></span></a>
                           </div>
-                          <ul class="sub-menu">
+                          <ul class="sub-menu" id="sub-menu-3">
                             <li id="menu-item-783"
                               class="menu-item menu-item-type-post_type menu-item-object-page hfe-creative-menu">
                               <a href="recent-works/index.html" class="hfe-sub-menu-item">Recent Works</a>
@@ -1928,6 +1928,15 @@
                         toggleButton.classList.toggle("hfe-active-menu-full-width")
                         nav.classList.toggle("menu-is-active")
                         nav.classList.toggle("navStyle")
+                      }
+
+                      function toggleSubMenu(id) {
+                        const submenu = document.getElementById(id)
+                        submenu.style.visibility = "visible"
+                        submenu.style.opacity = 1
+                        submenu.style.position = "relative"
+                        submenu.style.height = "auto"
+
                       }
                     </script>
                   </div>
