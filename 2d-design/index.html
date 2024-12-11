@@ -1572,14 +1572,22 @@
                         nav.classList.toggle("menu-is-active")
                         nav.classList.toggle("navStyle")
                       }
-
                       function toggleSubMenu(id) {
-                        const submenu = document.getElementById(id)
-                        submenu.style.visibility = "visible"
-                        submenu.style.opacity = 1
-                        submenu.style.position = "relative"
-                        submenu.style.height = "auto"
+                        const submenu = document.getElementById(id);
 
+                        if (submenu.style.visibility === "visible") {
+                          // Hide the submenu
+                          submenu.style.visibility = "hidden";
+                          submenu.style.opacity = 0;
+                          submenu.style.position = "absolute"; // Ensure it doesn't affect layout
+                          submenu.style.height = "0";
+                        } else {
+                          // Show the submenu
+                          submenu.style.visibility = "visible";
+                          submenu.style.opacity = 1;
+                          submenu.style.position = "relative";
+                          submenu.style.height = "auto";
+                        }
                       }
                     </script>
                   </div>
