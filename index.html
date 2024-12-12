@@ -1821,7 +1821,7 @@
                 <div class="elementor-widget-container">
                   <div class="hfe-nav-menu hfe-layout-horizontal hfe-nav-menu-layout horizontal hfe-pointer__none"
                     data-layout="horizontal">
-                    <div role="button" class="hfe-nav-menu__toggle elementor-clickable">
+                    <div role="button" class="hfe-nav-menu__toggle elementor-clickable" onclick="toggleClasses()">
                       <span class="screen-reader-text">Menu</span>
                       <div class="hfe-nav-menu-icon">
                         <i aria-hidden="true" class="fas fa-align-justify"></i>
@@ -1838,11 +1838,11 @@
                         </li>
                         <li id="menu-item-653"
                           class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children parent hfe-has-submenu hfe-creative-menu">
-                          <div class="hfe-has-submenu-container">
+                          <div class="hfe-has-submenu-container" onclick="toggleSubMenu('sub-menu-1')">
                             <a href="#" class="hfe-menu-item">Design Solutions<span
                                 class="hfe-menu-toggle sub-arrow hfe-menu-child-0"><i class="fa"></i></span></a>
                           </div>
-                          <ul class="sub-menu">
+                          <ul class="sub-menu" id="sub-menu-1">
                             <li id="menu-item-445"
                               class="menu-item menu-item-type-post_type menu-item-object-page hfe-creative-menu">
                               <a href="2d-design/index.html" class="hfe-sub-menu-item">2D Design</a>
@@ -1855,11 +1855,11 @@
                         </li>
                         <li id="menu-item-789"
                           class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children parent hfe-has-submenu hfe-creative-menu">
-                          <div class="hfe-has-submenu-container">
+                          <div class="hfe-has-submenu-container" onclick="toggleSubMenu('sub-menu-2')">
                             <a href="#" class="hfe-menu-item">Modular Design<span
                                 class="hfe-menu-toggle sub-arrow hfe-menu-child-0"><i class="fa"></i></span></a>
                           </div>
-                          <ul class="sub-menu">
+                          <ul class="sub-menu" id="sub-menu-2">
                             <li id="menu-item-790"
                               class="menu-item menu-item-type-custom menu-item-object-custom hfe-creative-menu">
                               <a href="modular-kitchen/index.html" class="hfe-sub-menu-item">Modern kitchen</a>
@@ -1868,11 +1868,11 @@
                         </li>
                         <li id="menu-item-875"
                           class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children parent hfe-has-submenu hfe-creative-menu">
-                          <div class="hfe-has-submenu-container">
-                            <a href="/" class="hfe-menu-item">Home Renovation<span
+                          <div class="hfe-has-submenu-container" onclick="toggleSubMenu('sub-menu-3')">
+                            <a href="#" class="hfe-menu-item">Home Renovation<span
                                 class="hfe-menu-toggle sub-arrow hfe-menu-child-0"><i class="fa"></i></span></a>
                           </div>
-                          <ul class="sub-menu">
+                          <ul class="sub-menu" id="sub-menu-3">
                             <li id="menu-item-783"
                               class="menu-item menu-item-type-post_type menu-item-object-page hfe-creative-menu">
                               <a href="recent-works/index.html" class="hfe-sub-menu-item">Recent Works</a>
@@ -1893,6 +1893,51 @@
                         </li>
                       </ul>
                     </nav>
+                    <style>
+                      .navStyle {
+                        background-color: white;
+                        z-index: 9999;
+                        width: 100%;
+                      }
+
+                      @media only screen and (max-width:320px) {
+                        .navStyle {
+                          width: 320px;
+                          left: -138px;
+                          top: 105px !important;
+                        }
+                      }
+                    </style>
+                    <script>
+                      function toggleClasses() {
+                        const toggleButton = document.querySelector(".hfe-nav-menu__toggle")
+                        const nav = document.querySelector(".hfe-nav-menu__layout-horizontal")
+                        console.log(toggleButton)
+                        toggleButton.classList.toggle("hfe-active-menu")
+                        toggleButton.classList.toggle("hfe-active-menu-full-width")
+                        nav.classList.toggle("menu-is-active")
+                        nav.classList.toggle("navStyle")
+                      }
+
+                      function toggleSubMenu(id) {
+                        const submenu = document.getElementById(id);
+
+                        if (submenu.style.visibility === "visible") {
+                          // Hide the submenu
+                          submenu.style.visibility = "hidden";
+                          submenu.style.opacity = 0;
+                          submenu.style.position = "absolute"; // Ensure it doesn't affect layout
+                          submenu.style.height = "0";
+                        } else {
+                          // Show the submenu
+                          submenu.style.visibility = "visible";
+                          submenu.style.opacity = 1;
+                          submenu.style.position = "relative";
+                          submenu.style.height = "auto";
+                        }
+                      }
+
+                    </script>
                   </div>
                 </div>
               </div>
