@@ -1409,14 +1409,14 @@
         <div class="description"></div>
       </div>
     </div>
-    <hr />
     <div data-elementor-type="wp-page" data-elementor-id="437" class="elementor elementor-437">
       <!-- Header -->
       <section
         class="elementor-section elementor-top-section elementor-element elementor-element-9673f5e elementor-section-full_width elementor-section-height-min-height elementor-section-content-middle elementor-section-height-default elementor-section-items-middle"
         data-id="9673f5e" data-element_type="section"
         data-settings='{"background_background":"classic","jet_parallax_layout_list":[]}'>
-        <div class="elementor-container elementor-column-gap-default" style="min-height: 100px">
+        <div class="elementor-container elementor-column-gap-default"
+          style="min-height: 100px; padding-top: 5px; background-color: #0b2532;">
           <div
             class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-af59626"
             data-id="af59626" data-element_type="column">
@@ -1485,6 +1485,15 @@
                       data-toggle-icon='&lt;i aria-hidden="true" tabindex="0" class="fas fa-align-justify"&gt;&lt;/i&gt;'
                       data-close-icon='&lt;i aria-hidden="true" tabindex="0" class="far fa-window-close"&gt;&lt;/i&gt;'
                       data-full-width="yes">
+                      <style>
+                        .hfe-menu-item {
+                          color: #efefef !important;
+                        }
+
+                        .hfe-menu-item:hover {
+                          color: #7a7a7a !important;
+                        }
+                      </style>
                       <ul id="menu-1-d75ec52" class="hfe-nav-menu">
                         <li id="menu-item-322"
                           class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-317 current_page_item parent hfe-creative-menu">
@@ -1539,7 +1548,7 @@
                         </li>
                         <li id="menu-item-785"
                           class="menu-item menu-item-type-custom menu-item-object-custom parent hfe-creative-menu">
-                          <a href="../interior-in-a-budget/index.html" class="hfe-menu-item">Interior In a Budget</a>
+                          <a href="#" class="hfe-menu-item">Blog</a>
                         </li>
                         <li id="menu-item-856"
                           class="menu-item menu-item-type-post_type menu-item-object-page parent hfe-creative-menu">
@@ -1602,13 +1611,30 @@
       <section>
         <div>
           <style>
+            .heading-section {
+              text-align: center;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              padding: 20px 40px;
+            }
+
+            .heading-section>h3 {
+              font-weight: 600;
+            }
+
+            .heading-section>p {
+              max-width: 80%;
+              text-align: center;
+            }
+
             .design-section {
               display: flex;
               align-items: center;
               justify-content: space-between;
               padding: 20px;
               background-color: #fff;
-              height: 90vh;
+              min-height: 70vh;
               /* Adjusted height for better layout */
               border: 1px solid #ddd;
 
@@ -1620,7 +1646,7 @@
               padding: 20px;
             }
 
-            .content h2 {
+            .content h3 {
               margin-top: 0;
               color: #333;
               font-size: 2rem;
@@ -1668,7 +1694,11 @@
               max-width: 80%;
               height: auto;
               border-radius: 8px;
-              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+              box-shadow: 2px 2px 4px #000000;
+            }
+
+            .image img:hover {
+              box-shadow: 2px 2px 8px #000000;
             }
 
             @media (max-width:520px) {
@@ -1676,30 +1706,93 @@
                 height: auto;
                 flex-direction: column;
               }
+
+              .design-section-even {
+                flex-direction: column-reverse;
+              }
+
+              .content h3 {
+                text-align: center;
+                font-size: 1.5rem;
+              }
+
+              .heading-section>h3 {
+                font-size: 1.5rem;
+              }
             }
           </style>
+          <div class="heading-section">
+            <h3>2D Interior Design Services: Enhancing Your Space with Precision</h3>
+            <p>At SpaceRevolution, we specialize in 2D interior design to ensure your space is planned with accuracy and
+              clarity. Our 2D designs consist of floor plans, furniture layouts, and elevation drawings, providing a
+              comprehensive view of your project before execution.</p>
+          </div>
           <div class="design-section">
             <div class="content">
-              <h2>2D Design</h2>
-              <p>
-                Explore the exciting field of 2D design, where creativity
-                transforms ideas into visual masterpieces. This versatile
-                discipline offers endless possibilities for artists,
-                designers, and storytellers.
-              </p>
+              <h3>Why Choose 2D Interior Design?</h3>
               <ul>
-                <li>Illustrations and Character Design</li>
-                <li>Digital and Traditional Art</li>
-                <li>Logo and Brand Design</li>
-                <li>Infographics and Diagrams</li>
-                <li>Website and Mobile App Layouts</li>
+                <li><strong>Visual Clarity: </strong> Simple, easy-to-understand layouts for better communication.</li>
+                <li><strong>Accuracy: </strong> Precise measurements for efficient use of space, minimizing errors.</li>
+                <li><strong>Cost-Effective: </strong> Early identification of design issues saves time and money.
+                <li><strong>Foundation for 3D Design: </strong> A base for creating detailed 3D models.</li>
               </ul>
-              <a href="#" class="btn">Learn More</a>
             </div>
             <div class="image">
-              <img src="../wp-content/uploads/2023/05/1-BHK-Sample-Plan_1-01.png" alt="2D Design Illustration" />
+              <img src="./image/IMG_2961.PNG" alt="2D Design Illustration" />
               <!-- src="../wp-content/uploads/2023/05/1-BHK-Sample-Plan_1-01.png" -->
             </div>
+          </div>
+          <div class="design-section design-section-even">
+            <div class="image">
+              <img src="./image/IMG_2962.PNG" alt="2D Design Illustration" />
+              <!-- src="../wp-content/uploads/2023/05/1-BHK-Sample-Plan_1-01.png" -->
+            </div>
+            <div class="content">
+              <h3>Our 2D Design Services Include</h3>
+              <ul>
+                <li><strong>Residential: </strong>Custom homes, villas, and apartments with floor plans and
+                  elevations.</li>
+                <li><strong>Commercial: </strong>Office spaces and coworking environments focused on functionality and
+                  aesthetics.</li>
+                <li><strong>Retail Interiors: </strong> Layouts for stores, cafes, and showrooms, ensuring optimal
+                  customer flow.
+                <li><strong>Customized Layouts: </strong> Tailored designs to suit your unique vision.</li>
+              </ul>
+            </div>
+
+          </div>
+          <div class="design-section">
+            <div class="content">
+              <h3>Benefits of Our 2D Designs:</h3>
+              <ul>
+                <li><strong>Easy to Understand: </strong> Clear visuals for clients and contractors.
+                </li>
+                <li><strong>Better Communication: </strong> Ensures alignment among all project stakeholders.</li>
+                <li><strong>Flexible & Adaptable: </strong> Quick updates to accommodate evolving ideas.</li>
+                <li><strong>Budget-Friendly: </strong> Early detection of spatial issues reduces unnecessary costs.
+                </li>
+              </ul>
+            </div>
+            <div class="image">
+              <img src="./image/IMG_2965.PNG" alt="2D Design Illustration" />
+              <!-- src="../wp-content/uploads/2023/05/1-BHK-Sample-Plan_1-01.png" -->
+            </div>
+          </div>
+          <div class="design-section design-section-even">
+            <div class="image">
+              <img src="./image/IMG_2967.PNG" alt="2D Design Illustration" />
+              <!-- src="../wp-content/uploads/2023/05/1-BHK-Sample-Plan_1-01.png" -->
+            </div>
+            <div class="content">
+              <h3>Why SpaceRevolution?</h3>
+              <ul>
+                <li><strong>Precision and Detail: </strong>Thorough, accurate designs.</li>
+                <li><strong>Client-Centric: </strong>Collaborating to meet your unique needs.</li>
+                <li><strong>Fast Turnaround: </strong>On-time delivery of all designs </li>
+                <li><strong>Expert Team: </strong> Skilled professionals ensuring space optimization.</li>
+              </ul>
+            </div>
+
           </div>
         </div>
       </section>
@@ -1790,7 +1883,7 @@
                 <div class="elementor-widget-container">
                   <p><a href="../index.html">Home</a></p>
                   <p>
-                    <a href="../interior-in-a-budget/index.html">Interior In a Budget</a>
+                    <a href="../interior-in-a-budget/index.html">Blog</a>
                   </p>
                   <p>
                     <a href="../free-estimate/index.html">FREE Estimate</a>

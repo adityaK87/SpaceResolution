@@ -1409,14 +1409,15 @@
         <div class="description"></div>
       </div>
     </div>
-    <hr />
+
     <div data-elementor-type="wp-page" data-elementor-id="437" class="elementor elementor-437">
       <!-- Header -->
       <section
         class="elementor-section elementor-top-section elementor-element elementor-element-9673f5e elementor-section-full_width elementor-section-height-min-height elementor-section-content-middle elementor-section-height-default elementor-section-items-middle"
         data-id="9673f5e" data-element_type="section"
         data-settings='{"background_background":"classic","jet_parallax_layout_list":[]}'>
-        <div class="elementor-container elementor-column-gap-default" style="min-height: 100px;">
+        <div class="elementor-container elementor-column-gap-default"
+          style="min-height: 100px; padding-top: 5px; background-color: #0b2532;">
           <div
             class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-af59626"
             data-id="af59626" data-element_type="column">
@@ -1485,6 +1486,15 @@
                       data-toggle-icon='&lt;i aria-hidden="true" tabindex="0" class="fas fa-align-justify"&gt;&lt;/i&gt;'
                       data-close-icon='&lt;i aria-hidden="true" tabindex="0" class="far fa-window-close"&gt;&lt;/i&gt;'
                       data-full-width="yes">
+                      <style>
+                        .hfe-menu-item {
+                          color: #efefef !important;
+                        }
+
+                        .hfe-menu-item:hover {
+                          color: #7a7a7a !important;
+                        }
+                      </style>
                       <ul id="menu-1-d75ec52" class="hfe-nav-menu">
                         <li id="menu-item-322"
                           class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-317 current_page_item parent hfe-creative-menu">
@@ -1539,7 +1549,7 @@
                         </li>
                         <li id="menu-item-785"
                           class="menu-item menu-item-type-custom menu-item-object-custom parent hfe-creative-menu">
-                          <a href="../interior-in-a-budget/index.html" class="hfe-menu-item">Interior In a Budget</a>
+                          <a href="#" class="hfe-menu-item">Blog</a>
                         </li>
                         <li id="menu-item-856"
                           class="menu-item menu-item-type-post_type menu-item-object-page parent hfe-creative-menu">
@@ -1603,13 +1613,30 @@
       <section>
         <div>
           <style>
+            .heading-section {
+              text-align: center;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              padding: 20px 40px;
+            }
+
+            .heading-section>h3 {
+              font-weight: 600;
+            }
+
+            .heading-section>p {
+              max-width: 80%;
+              text-align: center;
+            }
+
             .design-section {
               display: flex;
               align-items: center;
               justify-content: space-between;
               padding: 20px;
               background-color: #fff;
-              height: 90vh;
+              min-height: 70vh;
               /* Adjusted height for better layout */
               border: 1px solid #ddd;
 
@@ -1667,9 +1694,13 @@
 
             .image img {
               max-width: 80%;
-              height: auto;
+              max-height: auto;
               border-radius: 8px;
-              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+              box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+            }
+
+            .image img:hover {
+              box-shadow: 2px 2px 8px #000000;
             }
 
             @media (max-width:520px) {
@@ -1677,28 +1708,78 @@
                 height: auto;
                 flex-direction: column;
               }
+
+              .design-section-even {
+                flex-direction: column-reverse;
+              }
+
+              .content h3 {
+                text-align: center;
+                font-size: 1.5rem;
+              }
+
+              .heading-section>h3 {
+                font-size: 1.5rem;
+              }
             }
           </style>
+          <div class="heading-section">
+            <h3>3D Interior Design Services: Bring Your Vision to Life in Stunning Detail</h3>
+            <p>At SpaceRevolution, we specialize in 3D interior design that takes your concepts to the next level. Our
+              3D renderings provide a realistic and immersive experience, allowing you to visualize your space before
+              construction begins. From modular kitchens to complete home renovations, we ensure every detail is
+              captured, from furniture placement to lighting effects. Our 3D designs help streamline decision-making,
+              improve collaboration, and ensure your project stays on track.</p>
+          </div>
           <div class="design-section">
             <div class="content">
-              <h2>3D Design</h2>
-              <p>
-                Explore the exciting field of 3D design, where creativity
-                transforms ideas into visual masterpieces. This versatile
-                discipline offers endless possibilities for artists,
-                designers, and storytellers.
-              </p>
+              <h2>Why 3D Design is Essential?</h2>
               <ul>
-                <li>Illustrations and Character Design</li>
-                <li>Digital and Traditional Art</li>
-                <li>Logo and Brand Design</li>
-                <li>Infographics and Diagrams</li>
-                <li>Website and Mobile App Layouts</li>
+                <li><strong>Immersive Visuals: </strong> Experience your design with lifelike renderings.</li>
+                <li><strong>Enhanced Accuracy: </strong> View your space from every angle to perfect your design.</li>
+                <li><strong>Easier Decision-Making: </strong> Make informed choices about layout, colors, and
+                  textures.</li>
+                <li><strong>Time and Cost-Saving: </strong> Catch potential issues early, reducing the risk of costly
+                  mistakes.</li>
+
               </ul>
-              <a href="#" class="btn">Learn More</a>
             </div>
             <div class="image">
-              <img src="../wp-content/uploads/2024/04/pexels-jvdm-1454805.jpg" alt="2D Design Illustration" />
+              <img src="./images/IMG_1260.jpeg" alt="2D Design Illustration" />
+            </div>
+          </div>
+          <div class="design-section design-section-even">
+            <div class="image">
+              <img src="./images/IMG_1262.jpeg" alt="2D Design Illustration" />
+            </div>
+            <div class="content">
+              <h2>Our 3D Design Services</h2>
+              <ul>
+                <li><strong>Residential: </strong> Custom 3D designs for homes, apartments, and villas.</li>
+                <li><strong>Commercial: </strong> Functional and aesthetic 3D models for offices and workspaces.</li>
+                <li><strong>Retail: </strong> Optimized store layouts to ensure an engaging customer experience.</li>
+                <li><strong>Tailored Designs: </strong> 3D visualizations personalized to your unique needs.</li>
+
+              </ul>
+            </div>
+
+          </div>
+          <div class="design-section">
+            <div class="content">
+              <h2>Why Choose SpaceRevolution for 3D Design?</h2>
+              <ul>
+                <li><strong>Realistic Renderings: </strong>Photorealistic 3D images to help visualize your project.
+                </li>
+                <li><strong>Collaborative Process: </strong>Share and refine designs with clients and contractors.
+                </li>
+                <li><strong>Quick Adaptations: </strong>Adjust designs as needed, with fast turnaround times.</li>
+                <li><strong>Expert Team: </strong>Professional designers who bring creativity and precision to every
+                  project.</li>
+
+              </ul>
+            </div>
+            <div class="image">
+              <img src="./images/IMG_1263.jpeg" alt="2D Design Illustration" />
             </div>
           </div>
         </div>
